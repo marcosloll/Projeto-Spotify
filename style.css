@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #000000, #0a1f0a);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.search input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+}
+
+.search input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+.search button {
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: none;
+  background: #1db954;
+  cursor: pointer;
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.player__screen {
+    animation: fadeIn 0.5s ease;
+}
+
+.player__screen {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  display: flex;
+  width: 700px;
+  overflow: hidden;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.player__album img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.player__info {
+  color: white;
+  flex: 1;
+}
+
+.player__now-playing {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.player__track-name {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.player__artist {
+  font-size: 13px;
+  color: #1db954;
+}
+
+.player__tracklist {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.player__tracklist li {
+  font-size: 13px;
+  padding: 5px 0;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.player__tracklist li:hover {
+  color: #1db954;
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.player__track-name a:hover {
+  text-decoration: underline !important;
+  opacity: 0.8;
+}
+
+#login-btn {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  background: #1db954;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}

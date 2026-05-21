@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Music Search</title>
+  </head>
+  <body>
+    <h1><i><i class="fa-solid fa-music"></i>Music Search</h1>
+    <button id="login-btn"><i class="fa-brands fa-spotify"></i> Login com Spotify</button>
+    <div class="search">
+      <input type="text" placeholder="Search for a song or artist..."/>
+      <button><i><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="player">
+    <div class="player__screen">
+        <div class="player__album">
+            <img id="album-cover" src="" alt="Album Cover" style="display:none">
+<i id="album-placeholder" class="fa-solid fa-music" style="font-size: 80px; color: rgba(255,255,255,0.2);"></i>
+        </div>
+        <div class="player__info">
+            <p class="player__now-playing">Song</p>
+            <h3 class="player__track-name"></h3>
+            <p class="player__artist"></p>
+        </div>
+    </div>
+</div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
