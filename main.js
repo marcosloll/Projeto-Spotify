@@ -2,7 +2,7 @@ console.log(window.location.search);
 
 const clientId = "37a6c9b5b2714236921fea4bd8a67b37";
 const clientSecret = "b9989566f2c24ab0bd5f655c5a20ad04";
-const redirectUri = "http://127.0.0.1:5500/index.html";
+const redirectUri = "https://marcosloll.github.io/Projeto-Spotify/";
 
 const generateCodeVerifier = () => {
   const array = new Uint8Array(32);
